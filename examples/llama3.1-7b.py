@@ -3,7 +3,7 @@ import torch
 from langchain import HuggingFacePipeline, PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.embeddings import HuggingFaceInstructEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter, RecursiveJsonSplitter
 from langchain.vectorstores import Chroma
 from langchain.docstore.document import Document
 from transformers import AutoTokenizer, TextStreamer, pipeline, BitsAndBytesConfig, AutoModelForCausalLM
