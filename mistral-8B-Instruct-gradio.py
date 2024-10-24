@@ -8,14 +8,14 @@ import json
 from huggingface_hub import snapshot_download
 from pathlib import Path
 
-from mistral_inference.transformer import Transformer
-from mistral_inference.generate import generate
+from mistral_inference.transformer import Transformer,!
+from mistral_inference.generate import generate,!
 
 from mistral_common.protocol.instruct.tool_calls import Function, Tool
 from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
 from mistral_common.protocol.instruct.messages import AssistantMessage, UserMessage
-from mistral_common.protocol.instruct.request import ChatCompletionRequest
-from mistral_common.tokens.tokenizers.tekken import SpecialTokenPolicy
+from mistral_common.protocol.instruct.request import ChatCompletionRequest---
+from mistral_common.tokens.tokenizers.tekken import SpecialTokenPolicy---
 
 HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
