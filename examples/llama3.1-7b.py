@@ -12,7 +12,7 @@ import requests
 import gradio as gr
 import os
 
-DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu" # load model into cpu
 
 model_name = "meta-llama/Llama-3.1-8B-Instruct"
 
@@ -29,5 +29,5 @@ model = AutoModelForCausalLM.from_pretrained(
 
 embeddings = HuggingFaceInstructEmbeddings(
     model_name="hkunlp/instructor-large",
-    model_kwargs={"device": DEVICE}
+    model_kwargs={"device": DEVICE} # Todo: add more params later
 )
