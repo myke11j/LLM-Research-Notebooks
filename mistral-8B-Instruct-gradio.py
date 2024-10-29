@@ -148,6 +148,7 @@ with gr.Blocks(theme="citrus", css=CSS) as demo:
             ["What are 5 creative things I could do with my kids' art? I don't want to throw them away, but it's also so much clutter."],
             ["Tell me a random fun fact about the Roman Empire."],
             ["Show me a code snippet of a website's sticky header in CSS and JavaScript."],
+            ["What is the best possible option for new code gen tools? Exlcuding low code"]
         ],
         cache_examples = False,
         additional_inputs_accordion=gr.Accordion(label="⚙️ Parameters", open=True, render=False),
